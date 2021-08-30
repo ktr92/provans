@@ -717,3 +717,79 @@ padding: 3px;
 .t-datepicker-days {
   width: 540px;
 }
+
+.t-day{
+  background: none;
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 130%;
+
+
+/* Black */
+
+color: #1E1E20;
+}
+.t-end, .t-end-limit, .t-start {
+
+  background: #49A399;
+border-radius: 2px;
+}
+td.t-day.t-today.t-hover-day {
+   background: #49A399;
+  border-radius: 2px;
+  color: #fff;
+}
+
+td.t-day.t-hover-day {
+   background: #49A399;
+  border-radius: 2px;
+  color: #fff;
+}
+td.t-day.t-range-limit {
+  background: #F1F1F4;
+   font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 130%;
+
+
+/* Black */
+
+color: #1E1E20;
+}
+
+.t-hover-day:hover:after {
+    border-color: transparent;
+    border-top-color: #49A399;
+}
+.t-hover-day:hover,
+ .t-hover-day-content {
+   background: #49A399;
+}
+.t-start.t-today, .t-start.t-today .t-hover-day-content, .t-end.t-today, .t-end.t-today .t-hover-day-content {
+  background: #49A399;
+  border-radius: 2px;
+}
+
+.t-check-in .t-end, .t-check-out .t-start, .t-check-out tr ~ .t-end {
+   background: #49A399;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.t-today:hover, .t-today:hover .t-hover-day-content {
+    background: #49A399;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.t-highlighted {
+  font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 130%;
+
+
+color: #1E1E20;
+}

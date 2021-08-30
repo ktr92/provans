@@ -12,26 +12,25 @@
   border-right-color: #e8e8e8; }
 
 .t-date-title {
-  color: #dc6502; }
+  color: #49A399; }
 
 .t-special-day:before {
   border-color: transparent;
-  border-top-color: #dc6502;
-  border-right-color: #dc6502; }
+  border-top-color: #49A399;
+  border-right-color: #49A399; }
 
 .t-datepicker-day {
   border-color: #ededed;
   background: #fff; }
 
 .t-day, .t-range, .t-start, .t-end, .t-disabled {
-  background: #fafafa;
+  background: #F1F1F4;
   border-color: #fff; }
 
 .t-disabled {
   background: transparent; }
 
-.t-highlighted {
-  color: #fea860; }
+
   .t-highlighted.t-disabled {
     background: #fafafa; }
 
@@ -39,33 +38,37 @@
 .t-end,
 .t-end-limit {
   color: #fff;
-  background: #fd7e14; }
-
+  background: #49A399; }
+.t-range {
+  color: #1E1E20;
+}
 .t-range, .t-range-limit {
-  color: #fea860; }
+      
+  }
 
 .t-range {
-  background: #fffbf8; }
+   }
 
 .t-range-limit {
-  background: #ffedde; }
+  }
   .t-range-limit.t-start, .t-range-limit.t-end {
-    color: #fff;
-    background: #fec392; }
+     color: #fff;
+  background: #49A399;
+    }
 
 .t-check-in .t-end,
 .t-check-out .t-start,
 .t-check-out tr ~ .t-end {
   color: #fff;
-  background: #fd7e14; }
+  background: #49A399; }
 
 .t-hover-day, .t-hover-day-content, .t-hover-day:hover {
   color: #fff;
-  background: #fea860; }
+  background: #49A399; }
 
 .t-hover-day::after {
   border-color: transparent;
-  border-top-color: #fea860; }
+  border-top-color: #49A399; }
 
 .t-today, .t-today .t-hover-day-content {
   background: #aeaeae; }
@@ -74,10 +77,10 @@
   border-top-color: #aeaeae; }
 
 .t-today:hover, .t-today:hover .t-hover-day-content {
-  background: #fea860; }
+  background: #49A399; color: #fff;}
 
 .t-today:hover::after {
-  border-top-color: #fea860; }
+  border-top-color: #49A399; }
 
 .t-start.t-today,
 .t-end.t-today {
@@ -85,7 +88,7 @@
   .t-start.t-today, .t-start.t-today .t-hover-day-content,
   .t-end.t-today,
   .t-end.t-today .t-hover-day-content {
-    background: #fd7e14; }
+    background: #49A399; }
   .t-start.t-today::after,
   .t-end.t-today::after {
-    border-top-color: #fd7e14; }
+    border-top-color: #49A399; }

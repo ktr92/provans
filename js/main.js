@@ -4,6 +4,10 @@ $(document).ready(function () {
       titleMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Декабрь'],
       titleDays: ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'],
       limitDateRanges: 99,
+      titleToday: "Сегодня",
+       toDayShowTitle: true,
+       titleDateRange: "день",
+       titleDateRanges: "дней"
     });
 
    $('.js-select2_item1').each(function() {
