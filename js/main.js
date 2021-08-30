@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+   $('.t-datepicker').tDatePicker({
+      titleMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Декабрь'],
+      titleDays: ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'],
+      limitDateRanges: 99,
+    });
+
+   $('.js-select2_item1').each(function() {
+      $(this).select2({
+      minimumResultsForSearch: -1
+     })
+  });
+
+   $('.js-select2_item2').each(function() {
+      $(this).select2({
+      minimumResultsForSearch: -1
+     })
+  });
+
   $('.parent_catalog > a').click(function (e) {
     e.preventDefault();
     $('.bglayer').show();

@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css" />
     <link rel="stylesheet" href="/libs/lightbox/css/lightbox.min.css" />
     <link href="/css/jQuery.Brazzers-Carousel.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/t-datepicker.min.css">
+		<link rel="stylesheet" href="/css/themes/t-datepicker-main.css">
+<link rel="stylesheet" href="/css/themes/t-datepicker-orange.css">
+
     <link rel="stylesheet" type="text/css" href="/css/main.css?v=1.1" />
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -88,18 +93,41 @@
 	    					<div class="mainblock__title">
 	    						<h1>Добро пожаловать, <br>в отель <mark>4 СЕЗОНА</mark></h1>
 	    					</div>
+
+	    				
+
 	    					<div class="mainblock__form">
 	    						<form action="">
 	    							<div class="form form_row">
 	    								<div class="form__items">
 	    									<div class="form__item">
-	    										<input type="text" placeholder="Выберите даты" class="input-date datepicker-here">
+	    										<div class="t-datepicker">
+													  <div class="t-check-in"></div>
+													  <div class="t-check-out"></div>
+													</div>
+													
+													<span class="input input-date">Выберите даты</span>
+	    									</div>
+	    									<div class="form__item ">
+	    										<select name="" id="" class="input-persons js-select2_item1">
+	    											<option value="">Взрослых</option>
+	    											<option value="">0</option>
+	    											<option value="">1</option>
+	    											<option value="">2</option>
+	    											<option value="">3</option>
+	    											<option value="">4</option>
+	    											<option value="">5</option>
+	    										</select>
 	    									</div>
 	    									<div class="form__item">
-	    										<input type="text" placeholder="Взрослых" class="input-persons">
-	    									</div>
-	    									<div class="form__item">
-	    										<input type="text" placeholder="Детей" class="input-childs">
+	    											<select name="" id="" class="input-childs js-select2_item2">
+	    											<option value="">Детей</option>
+	    											<option value="">0</option>
+	    											<option value="">1</option>
+	    											<option value="">2</option>
+	    											<option value="">3</option>
+	    											
+	    										</select>
 	    									</div>
 	    									<div class="form__item">
 	    										<button class="btn_main" type="submit">Рассчитать</button>
@@ -296,7 +324,9 @@
     <script src="/js/wow.min.js"></script>
     <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>  
     <script src="/js/sly.min.js"></script>  
-    <script src="/js/jquery-ui.js"></script>   
+    <script src="/js/jquery-ui.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> 
+		<script src="/js/t-datepicker.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

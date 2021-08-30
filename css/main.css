@@ -375,16 +375,17 @@ vertical-align: middle;
   max-width: 1115px;
   display: flex;
   height: 80px;
-  overflow: hidden;
   box-shadow: 0px 6px 18px rgba(72, 58, 45, 0.1);
   border-radius: 4px;
 }
-.form_row input {
+.form_row input,
+.form_row select,
+.form_row .input {
     font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 130%;
-  
+  line-height: 80px;
   color: #1E1E20;
   display: block;
   background-color: #fff;
@@ -425,16 +426,13 @@ vertical-align: middle;
   color: #1E1E20;
 }
 
-.input-date {
-  width: 349px;
-
-}
 
 .input-date {
   background-image: url(/images/calendar.svg);
   background-position: left 50px center;
   background-repeat: no-repeat;
   padding-left: 95px;
+  width: 349px;
 }
 
 .input-persons {
@@ -442,6 +440,7 @@ vertical-align: middle;
   background-position: left 32px center;
   background-repeat: no-repeat;
   padding-left: 70px;
+  width: 264px;
 }
 
 .input-childs {
@@ -449,6 +448,7 @@ vertical-align: middle;
   background-position: left 32px center;
   background-repeat: no-repeat;
   padding-left: 70px;
+  width: 264px;
 }
 
 
@@ -496,4 +496,224 @@ button.btn_main:focus, a.btn_main:focus {
 button.btn_main:disabled, a.btn_main:disabled {
   background-color: #F1F1F4;
   color: #818A8A;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__items .form__item:nth-child(1):after,
+.form__items .form__item:nth-child(2):after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #F1F1F4;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+
+.form__item select.select2-container {
+  height: 100%;
+}
+
+.form__item  .select2-container .select2-selection--single {
+  height: 80px;
+  border: none;
+  border-radius: 0;
+}
+
+.form__item .input-persons + .select2-container .select2-selection--single .select2-selection__rendered {
+ height: 80px;
+
+    line-height: 80px;
+      font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1E1E20;
+    padding-left: 70px;
+    background-image: url(/images/users.svg);
+  background-position: left 32px center;
+  background-repeat: no-repeat;
+
+}
+
+.form__item .input-childs + .select2-container .select2-selection--single .select2-selection__rendered {
+ height: 80px;
+
+    line-height: 80px;
+      font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1E1E20;
+    padding-left: 70px;
+    background-image: url(/images/smile.svg);
+  background-position: left 32px center;
+  background-repeat: no-repeat;
+
+}
+
+
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    line-height: 80px;
+      font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1E1E20;
+}
+.form__item.input-persons  .select2-container .select2-selection--single .select2-selection__rendered {
+
+ }
+
+.form__item .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background-image: url(/images/arrow.svg);
+  background-color: transparent;
+  background-size: initial;
+  border: none !important;
+  height: 8px !important;
+  width: 16px !important;
+  margin: auto !important;
+  top: unset !important;
+  left: unset !important;
+  right: unset;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: calc(50% - 4px);
+  right: 38px;
+    height: 8px !important;
+  width: 16px !important;
+}
+
+.select2-results__option {
+    padding: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 130%;
+padding: 12px 16px;
+/* Black */
+
+color: #1E1E20;
+background: #fff;
+}
+
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  color: #49A399;
+  background: #fff;
+      font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+   background: #F1F1F4;
+}
+.select2-container--default .select2-results__option--selected {
+  
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 130%;
+padding: 12px 16px;
+/* Black */
+
+color: #1E1E20;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  max-height: 400px;
+}
+
+ul#select2--results > *:first-child {
+  display: none;
+}
+
+.select2-dropdown {
+  border: none;
+  box-shadow: 0px 6px 18px rgba(72, 58, 45, 0.1);
+}
+
+.t-dates.t-date-check-in, 
+.t-dates.t-date-check-out {
+  position: absolute;
+  opacity: 0;
+      width: 100%;
+    height: 80px;
+    width: 349px;
+
+}
+
+.t-check-in, .t-check-out {
+  border: none;
+}
+
+.t-datepicker-day {
+  top: 80px;
+}
+
+span.t-arrow-top, .t-arrow-top::after {
+  display: none !important; 
+}
+
+.t-check-out .t-datepicker-day {
+  left: 0;
+}
+
+table.t-table-condensed thead tr:first-child {
+  background: #EFF6F4;
+
+}
+table.t-table-condensed thead tr:first-child  th {
+  padding: 15px 0;
+}
+.t-datepicker-days .t-table-wrap {
+  width: 50%;
+  margin: 0;
+      padding: 0 28px 28px 28px;
+      position: relative;
+}
+.t-datepicker-days .t-table-wrap:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+      background: #EFF6F4;
+          height: 49px;
+    z-index: -1;
+}
+.t-datepicker-day {
+  padding: 0;
+}
+
+table.t-table-condensed thead tr:last-child th {
+ font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 130%;
+padding: 20px 0;
+
+
+/* Gray */
+
+color: #818A8A;
+}
+
+table.t-table-condensed tbody {
+  max-width: 230px;
+}
+
+.t-next, .t-prev, .t-table-condensed td, .t-table-condensed th {
+padding: 3px;
+}
+.t-datepicker-days {
+  width: 540px;
 }
