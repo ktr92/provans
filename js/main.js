@@ -21,17 +21,13 @@ $(document).ready(function () {
        titleDateRanges: "дней"
     });
 
-   $('.js-select2_item1').each(function() {
+   $('.js-select2_item').each(function() {
       $(this).select2({
       minimumResultsForSearch: -1
      })
   });
 
-   $('.js-select2_item2').each(function() {
-      $(this).select2({
-      minimumResultsForSearch: -1
-     })
-  });
+
 
    $('.galleryslider__slider').each(function() {
       $(this).slick({
@@ -45,12 +41,28 @@ $(document).ready(function () {
      });
     });
 
+   $('.photoslider__slider').each(function() {
+      $(this).slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: false,
+      dots: false,
+      fade: false,
+     });
+    });
+
+   
+
       $(".arrowRight").click(function(e) {
           $(this).parent().parent().find(".slick-slider").slick("slickNext");
       });
       $(".arrowLeft").click(function(e) {
           $(this).parent().parent().find(".slick-slider").slick("slickPrev");
       });
+
+      $("input[type=tel]").mask("+7 999 999 99 99")
 
 
 
