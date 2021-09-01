@@ -74,6 +74,21 @@ $(document).ready(function () {
         return false;
     });
 
+       jQuery(".mobileheader__burger a").click(function(e) {
+        e.preventDefault();
+        $('.mobilepanel').slideToggle();
+        $(this).parent().toggleClass('active');
+        $('.mobileheader__phone').toggleClass('active');
+        $('#header').toggleClass('active');
+        
+       });
+
+       jQuery(".mainmenu > ul > li.parent > a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('.submenu').slideToggle();
+         $(this).toggleClass('active');
+       });
+
 
 
 

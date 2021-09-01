@@ -32,7 +32,7 @@
     <a id="top"></a>
     <div class="indexblock">
     	<header id="header" class="header">
-	    	<div class="topheader">
+	    	<div class="topheader desktoponly">
 	    		<div class="container">
 	    			<div class="topheader__wrapper">
 			    		<div class="topheader__left">
@@ -40,16 +40,16 @@
 			    				<div class="toplink"><span>Отель на природе в Подмосковье</span></div>
 			    				<div class="toplink"><span>Серпуховский р-н, д. Васильевское</span></div>
 			    				<div class="toplink">
-				    				<a href="mailto:hotel@dom-korabl.ru">
+				    				<a href="mailto:hotel@dom-korabl.ru" class="linkcontact">
 				    					<img src="/images/mail.svg" alt="">
-				    					<span>hotel@dom-korabl.ru</span>
+				    					<span class="">hotel@dom-korabl.ru</span>
 				    				</a>
 				    			</div>	
 			    			</div>
 			    		</div>
 			    		<div class="topheader__right">
-			    			<a href="" class="callback link">ЗАКАЗАТЬ ЗВОНОК</a>
-			    			<a href="tel:89876543210" class="phone"><img src="/images/phone.svg" alt=""><span>8 987 654 32 10</span></a>
+			    			<a href="" class="callback link linkcontact">ЗАКАЗАТЬ ЗВОНОК</a>
+			    			<a href="tel:89876543210" class="phone linkcontact"><img src="/images/phone.svg" alt=""><span>8 987 654 32 10</span></a>
 			    		</div>
 			    	</div>
 		    	</div>
@@ -57,28 +57,63 @@
 	    	<div class="mainheader">
 	    		<div class="container">
 	    			<div class="mainheader__wrapper">
-			    		<div class="logo"><a href="/"><img src="/images/logo.svg" alt=""></a></div>
-				    		<div class="mainmenu">
-				    			<ul>
-				    				<li class="parent">
-				    					<a href="">Номера</a>
-				    					<ul class="submenu">
-				    						<li><a href="">Стандарт</a></li>
-				    						<li><a href="">Полулюкс</a></li>
-				    						<li><a href="">Люкс</a></li>
-				    						<li><a href="">Коттедж</a></li>
-				    						<li><a href="">Экодомик</a></li>
-				    					</ul>
-				    				</li>
-				    				<li class="active"><a href="">Услуги отеля</a></li>
-				    				<li><a href="">Отдых</a></li>
-				    				<li><a href="">Мероприятия</a></li>
-				    				<li><a href="">Кухня</a></li>
-				    				<li><a href="">Фотогалерея</a></li>
-				    				<li><a href="">Контакты</a></li>
-				    			</ul>
-				    		</div>
-	    					<div class="mainheader__button"><a href="#modal_1" data-toggle="modal" class="btn_border">Забронировать</a></div>
+                        <div class="mobileheader">
+			    		   <div class="logo"><a href="/"><img src="/images/logo.svg" alt=""></a></div>
+                           <div class="mobileheader__icons mobileonly">
+                               <div class="mobileheader__phone">
+                                   <a href="tel:89876543210"><img src="/images/mobilephone.svg" alt=""></a>
+                               </div>
+                               <div class="mobileheader__burger">
+                                   <a href="#" class="mobileheader__open"><img src="/images/mobileburger.svg" alt=""></a>
+                                   <a href="#" class="mobileheader__close"><img src="/images/closemenu.svg" alt=""></a>
+                               </div>
+                               
+                               
+                           </div>
+                        </div>
+
+                        <div class="mobilepanel">
+                            <div class="mobileonly">
+                                <div class="topheader__right">
+                                    <a href="" class="callback link linkcontact">ЗАКАЗАТЬ ЗВОНОК</a>
+                                    <a href="tel:89876543210" class="phone linkcontact"><img src="/images/phone.svg" alt=""><span>8 987 654 32 10</span></a>
+                                </div>
+                            </div>
+                            <div class="mainmenu">
+                                <ul>
+                                    <li class="parent">
+                                        <a href="">Номера</a>
+                                        <ul class="submenu">
+                                            <li><a href="">Стандарт</a></li>
+                                            <li><a href="">Полулюкс</a></li>
+                                            <li><a href="">Люкс</a></li>
+                                            <li><a href="">Коттедж</a></li>
+                                            <li><a href="">Экодомик</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="active"><a href="">Услуги отеля</a></li>
+                                    <li><a href="">Отдых</a></li>
+                                    <li><a href="">Мероприятия</a></li>
+                                    <li><a href="">Кухня</a></li>
+                                    <li><a href="">Фотогалерея</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="mainheader__button"><a href="#modal_1" data-toggle="modal" class="btn_border">Забронировать</a></div>
+
+                            <div class="topheader__links mobileonly">
+                                <div class="toplink toplink_email">
+                                    <a href="mailto:hotel@dom-korabl.ru" class="linkcontact">
+                                        <img src="/images/mail.svg" alt="">
+                                        <span class="">hotel@dom-korabl.ru</span>
+                                    </a>
+                                </div>  
+                                <div class="toplink"><span>Отель на природе в Подмосковье</span></div>
+                                <div class="toplink"><span>Серпуховский р-н, д. Васильевское</span></div>
+                                
+                            </div>
+                        </div>
+				    		
 	    			</div>
 	    		</div>
 	    		
