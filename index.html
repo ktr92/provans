@@ -512,7 +512,7 @@
 	    					<div class="pageform__info">
 	    						<p>Нажимая на кнопку «Свяжитесь со мной», вы соглашаетесь с условиями <a href="">политики конфиденциальности</a></p>
 	    					</div>
-	    					<div class="pageform__submit"><button class="btn_main btn_main_large">Свяжитесь со мной</button></div>
+	    					<div class="pageform__submit"><button class="btn_main btn_main_large"  type="submit">Свяжитесь со мной</button></div>
 	    				</form>
 	    			</div>
 	    		</div>
@@ -705,64 +705,90 @@
           </div>
         </div>
     </footer>
+
+    <a href="#modal_error" data-toggle="modal" class="btn_main">Успешно</a>
     <!-- Модальные окно - Заказать звонок -->
-    <div id="modalcallback" class="modal fade">
+    <div id="modal_1" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
-          <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true">
-            <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg">
-              <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path>
-            </svg>
+          <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+            <img src="/images/xclose.svg" alt="">
           </button>
           <div class="modal-body">
             <div class="modal__content">
-              <div class="modal-title">Заказать звонок</div>
+              <div class="pagetitle">
+	    				<h2>Обратный звонок</h2>
+	    				<div class="pagetitle__descr">Заполните форму и мы перезвоним Вам в ближайшее время</div>
+	    				</div>
               <div class="modal__form">
                 <form>
                   <div class="modal__inputs">
-                    <div class="form-group">
-                      <input type="text" name="" placeholder="Ваше имя">
+                    <div class="pageform__input">
+                      <input type="text" name="" placeholder="Имя">
                     </div>
-                    <div class="form-group">
+                    <div class="pageform__input">
                       <input type="tel" name="" placeholder="Телефон">
                     </div>
                   </div>
-                  <div class="check">
-                    <input type="checkbox" id="checkbox_3"  /> <label for="checkbox_3">Я даю свое согласие на обработку моих <a href="#">персональных данных</a></label>
-                  </div>
-                  <button class="btn_main btn_large" type="submit">Отправить</button>
+                  <div class="pageform__info">
+	    						<p>Нажимая на кнопку «Свяжитесь сомной», вы соглашаетесь с условиями <a href="">политики конфиденциальности</a></p>
+	    						</div>
+                  <div class="pageform__submit"><button class="btn_main btn_main_large" type="submit">Свяжитесь со мной</button></div>
                 </form>
               </div>
+              <div class="modal__figure modal__figure_top"><img src="/images/figure1.svg" alt=""></div>
+              <div class="modal__figure modal__figure_bottom"><img src="/images/figure2.svg" alt=""></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Модальные окно - Добавление в корзину  -->
-    <div id="modaladd" class="modal-product modal fade">
+
+    <!-- Модальные окно - success -->
+    <div id="modal_success" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
-          <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true">
-            <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg">
-              <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path>
-            </svg>
+          <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+            <img src="/images/xclose.svg" alt="">
           </button>
           <div class="modal-body">
-            <div class="modal__content">
-              <div class="modalproduct">
-                <div class="modalproduct__img"><img src="/images/product2.png" alt=""></div>
-                <div class="modalproduct__name">Радиатор PRADO Universal 30х300х2600 DU</div>
-                <div class="modalproduct__title">Товар добавлен в корзину</div>
-                <div class="modalproduct__links">
-                  <a href="#" class="btn_border btn_border_orange">Продолжить покупки</a>
-                  <a href="#" class="btn_main btn_main_small">Перейти в корзину</a>
-                </div>
+            <div class="modal__content modal__content_message">
+              <div class="modal__messagecontainer">
+              	<div class="modal__message">
+              		<div class="modal__messagetitle modal__messagetitle_green">Успешно!</div>
+              		<div class="modal__messagetext">Сообщение отправленно, мы перезвоним Вам в самое ближайшее время</div>
+              	</div>	
               </div>
+              <div class="modal__figure modal__figure_top"><img src="/images/figure1.svg" alt=""></div>
+              <div class="modal__figure modal__figure_bottom"><img src="/images/figure2.svg" alt=""></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+   <!-- Модальные окно - error -->
+    <div id="modal_error" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+            <img src="/images/xclose.svg" alt="">
+          </button>
+          <div class="modal-body">
+            <div class="modal__content modal__content_message">
+              <div class="modal__messagecontainer">
+              	<div class="modal__message">
+              		<div class="modal__messagetitle modal__messagetitle_red">Ошибка!</div>
+              		<div class="modal__messagetext">Не удалось отправить сообщение, попробуйте еще раз</div>
+              	</div>	
+              </div>
+              <div class="modal__figure modal__figure_top"><img src="/images/figure1.svg" alt=""></div>
+              <div class="modal__figure modal__figure_bottom"><img src="/images/figure2.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
     <div class="bglayer"></div>
     <script src="/js/jquery-1.9.1.js"></script>
     <script src="/js/bootstrap.min.js"></script>
