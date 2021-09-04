@@ -48,7 +48,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       autoplay: false,
       arrows: false,
-      dots: false,
+      dots: true,
       fade: false,
        responsive: [
     {
