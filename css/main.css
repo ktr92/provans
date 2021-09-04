@@ -485,14 +485,28 @@ vertical-align: middle;
   width: 238px;
 }
 
-button.btn_main, a.btn_main {
+.btn_main{
   background-color: #49A399;
   color: #fff;
   display: inline-block;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 18px 32px;
+      font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    min-width: 240px;
+    max-width: 100%;
+    border-radius: 4px;
 }
-
+.form_row button.btn_main {
+   background-color: #49A399;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+}
 
 button.btn_main:hover, a.btn_main:hover {
   background-color: #40958B;
@@ -1721,6 +1735,202 @@ color: #818A8A;
   padding: 0;
 }
 
+.form__title {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #1E1E20;
+}
+.pagebanner .mainblock {
+  height: 325px;
+  display: flex;
+  align-items: center;
+}
+
+.form__title {
+  margin-bottom: 32px;
+}
+
+.mainblock .container {
+  position: relative;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+}
+.mainblock {
+  background-position: center;
+  background-size: cover;
+}
+.mainblock__form {
+  padding-top: 50px;
+}
+.blocktitle h1 {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin-bottom: 60px;
+    color: #1E1E20;
+}
+
+.breadcrumbs {
+  padding: 16px;
+}
+
+
+
+.breadcrumbs li a, .breadcrumbs li span {
+ font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 130%;
+
+
+/* Gray */
+
+color: #818A8A;
+}
+.breadcrumbs ul {
+line-height: 1;
+}
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+  line-height: 1;
+}
+.breadcrumbs li:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top:7px;
+  line-height: 1;
+  background-color: #818A8A;
+}
+.breadcrumbs li:last-child:after {
+  display: none;
+}
+.pagecontent {
+  padding: 89px 0;
+}
+
+.services .services__item:nth-child(2n) .servicesitem__image{ 
+  order: 2;
+
+}
+.services .services__item:nth-child(2n) .servicesitem__main{ 
+  order: 1;
+
+}
+.services__item {
+  display: flex;
+  margin-bottom: 60px;
+}
+.servicesitem {
+  display: flex;
+}
+.servicesitem__image {
+  width: 49%;
+}
+
+.servicesitem__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    padding-top: 68.028%;
+}
+.servicesitem__img img {
+position: absolute;
+    left: -99999px;
+    right: -99999px;
+    top: -99999px;
+    bottom: -99999px;
+    margin: auto;
+    max-height: 100%;
+    max-width: initial;
+}
+
+
+.servicesitem__main {
+  width: 51%;
+}
+.servicesitem__content {
+  padding-left: 55px;
+}
+.servicesitem__title {
+  font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 120%;
+/* or 43px */
+
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+
+margin: 16px 0px;
+}
+.btn_main {
+  text-align: center;
+}
+.servicesitem__text {
+  /* Inter/Descktop/Body-1 */
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 130%;
+/* or 21px */
+
+
+/* Gray */
+
+color: #818A8A;
+
+
+margin: 16px 0px 32px 0;
+}
+.servicesitem__button {
+  margin: 16px 0;
+}
+
+.services .services__item:nth-child(2n) .servicesitem__content{ 
+  padding-left: 0;
+  padding-right: 55px;
+
+}
+
+.btn_border_large {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  
+  text-align: center;
+  padding: 18px 0;
+  min-width: 240px;
+  max-width: 100%;
+  color: #49A399;
+  }
+
+  .pageform_type2 {
+    background-image: url(/images/bg4.jpg);
+  }
+
 @media (max-width: 1200px) {
   .toplink {
     padding: 0 8px;
@@ -1777,7 +1987,7 @@ color: #818A8A;
   main {
     overflow-x: hidden;
   }
-  .form_row button {
+  .form_row button.btn_main {
     width: 200px;
   }
   .select2-container {
@@ -2331,12 +2541,13 @@ span.input.input-date:after {
               background-size: contain;
               height: 5px;
 }
-.form_row button {
+.form_row button.btn_main {
   height: 56px;
   line-height: 56px;
   font-size: 16px;
   border-radius: 4px;
   width: 100%;
+  padding: 0;
 }
 .mainblock__title {
   margin-bottom: 32px;
@@ -2370,7 +2581,7 @@ span.input.input-date:after {
 .pageblock {
     padding: 40px 0;
 }
-h2 {
+h2, .blocktitle h1 {
   font-size: 24px;
 line-height: 120%;
 margin-bottom: 24px;
