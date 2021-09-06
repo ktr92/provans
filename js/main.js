@@ -179,6 +179,14 @@ $(document).ready(function () {
     $(this).hide();
   });
 
+  $('.readmore').click(function (e) {
+    e.preventDefault();
+    $(this).siblings('.text').removeClass('text_hidden_mobile');
+    $(this).hide();
+  });
+
+  
+
   $(document).mouseup(function(e) 
     {
         var container = $(".bgtoggle-js");
