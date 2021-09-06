@@ -29,6 +29,18 @@ $(document).ready(function () {
 
 
 
+   $('.detailimage__slider').each(function() {
+      $(this).slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: false,
+      dots: true,
+      fade: true,
+     });
+    });
+   
    $('.galleryslider__slider').each(function() {
       $(this).slick({
       infinite: true,
