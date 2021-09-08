@@ -9,14 +9,14 @@
 
 $(document).ready(function() {
 
-  var slider = $(".photoheader__items");
+  var slider = $(".photoheader__items-slider");
   var scrollCount = null;
   var scroll= null;
 
-  slider
-      .slick({
+
+  slider.slick({
            infinite: false,
-      slidesToShow: 1,
+      slidesToShow: 9,
       slidesToScroll: 1,
       arrows: true,
       dots: false,
