@@ -7,9 +7,67 @@
   });
 })(jQuery);
 
+$(document).ready(function() {
+
+  var slider = $(".photoheader__items");
+  var scrollCount = null;
+  var scroll= null;
+
+  slider
+      .slick({
+           infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      centerMode: false,
+      focusOnSelect: false,
+      variableWidth: true,
+      centerPadding: '60px',
+      nextArrow: $('.photoheader__right'),
+      prevArrow: $('.photoheader__left'),  
+      });
+
+  slider.on('wheel', (function(e) {
+      e.preventDefault();
+
+      clearTimeout(scroll);
+      scroll = setTimeout(function(){scrollCount=0;}, 200);
+      if(scrollCount) return 0;
+      scrollCount=1;
+
+      if (e.originalEvent.deltaY < 0) {
+          $(this).slick('slickNext');
+      } else {
+          $(this).slick('slickPrev');
+      }
+  }));
+
+
+   //    var slideno = $('photoheader__item.active').data('slick-index');
+     //  $('.photoheader__items').slick('slickGoTo', slideno);
+     
+});
+
+ (function ($) {
+    $(function () {
+
+      $('.tabs-js .photoheader').on('click', '.photoheader__item:not(.active)', function () {
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('div.tabs-js').find('.photo__wrapper').find('div.photo__content').removeClass('active').eq($(this).index()).addClass('active');
+      });
+
+    });
+  })(jQuery);
 
 
 $(document).ready(function () {
+
+  
+
+
+
 
    $('.t-datepicker').tDatePicker({
       titleMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Декабрь'],
@@ -128,12 +186,28 @@ $(document).ready(function () {
 
        jQuery(".footermenu__title").click(function(e) {
         e.preventDefault();
-        $(this).siblings('.footermenu__links').slideToggle();
+        $(this).siblings('.footermenu__links').slideToggle().toggleClass('active');
          $(this).toggleClass('active');
        });
 
        
 
+       lightbox.option({
+        'resizeDuration': 30,
+        'wrapAround': true
+      })
+
+       (function ($) {
+      $(function () {
+
+        $('.producttabs__header ul').on('click', 'li:not(.active)', function () {
+          $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.producttabs').find('div.producttabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+
+      });
+    })(jQuery);
 
 
 
